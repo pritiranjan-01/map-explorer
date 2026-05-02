@@ -153,7 +153,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/pritiranjan-01/map-explorer/main/india-states.geojson")
+    fetch("https://raw.githubusercontent.com/pritiranjan-01/map-explorer/main/public/india-states.geojson")
       .then((r) => r.json())
       .then((d) => { setGeoData(d); setIsLoading(false); })
       .catch(() => setIsLoading(false));
